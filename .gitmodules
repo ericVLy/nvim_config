@@ -7,3 +7,6 @@
 [submodule "plugged/vim-airline-themes"]
 	path = plugged/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "plugged/nvim-lspconfig"]
+	path = plugged/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig.git
