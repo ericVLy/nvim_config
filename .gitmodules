@@ -10,21 +10,9 @@
 [submodule "plugged/nvim-lspconfig"]
 	path = plugged/nvim-lspconfig
 	url = https://github.com/neovim/nvim-lspconfig.git
-[submodule "plugged/deoplete.nvim"]
-	path = plugged/deoplete.nvim
-	url = https://github.com/Shougo/deoplete.nvim.git
-[submodule "plugged/deoplete-jedi"]
-	path = plugged/deoplete-jedi
-	url = https://github.com/deoplete-plugins/deoplete-jedi.git
 [submodule "plugged/nerdtree"]
 	path = plugged/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "plugged/nerdtree-git-plugin"]
 	path = plugged/nerdtree-git-plugin
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
-[submodule "plugged/vim-hug-neovim-rpc"]
-	path = plugged/vim-hug-neovim-rpc
-	url = https://github.com/roxma/vim-hug-neovim-rpc.git
-[submodule "plugged/nvim-yarp"]
-	path = plugged/nvim-yarp
-	url = https://github.com/roxma/nvim-yarp.git
