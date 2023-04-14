@@ -8,8 +8,7 @@ Plug 'vim-airline/vim-airline-themes'
 
 Plug 'scrooloose/nerdtree'
 
-Plug 'williamboman/mason.nvim'
-Plug 'williamboman/mason-lspconfig.nvim'
+Plug 'plugged/nvim-lspconfig'
 
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
