@@ -10,3 +10,11 @@ vim.o.expandtab = true
 vim.bo.expandtab = true
 vim.o.autoindent = true
 vim.bo.autoindent = true
+
+-- nerdtree config
+vim.cmd[[
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+]]
