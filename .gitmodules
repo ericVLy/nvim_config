@@ -19,3 +19,30 @@
 [submodule "plugged/coc.nvim"]
 	path = plugged/coc.nvim
 	url = https://github.com/neoclide/coc.nvim.git
+[submodule "plugged/cmp-nvim-lsp"]
+	path = plugged/cmp-nvim-lsp
+	url = https://github.com/hrsh7th/cmp-nvim-lsp.git
+[submodule "plugged/cmp-buffer"]
+	path = plugged/cmp-buffer
+	url = https://github.com/hrsh7th/cmp-buffer.git
+[submodule "plugged/cmp-path"]
+	path = plugged/cmp-path
+	url = https://github.com/hrsh7th/cmp-path.git
+[submodule "plugged/cmp-cmdline"]
+	path = plugged/cmp-cmdline
+	url = https://github.com/hrsh7th/cmp-cmdline.git
+[submodule "plugged/nvim-cmp"]
+	path = plugged/nvim-cmp
+	url = https://github.com/hrsh7th/nvim-cmp.git
+[submodule "plugged/cmp-vsnip"]
+	path = plugged/cmp-vsnip
+	url = https://github.com/hrsh7th/cmp-vsnip.git
+[submodule "plugged/vim-vsnip"]
+	path = plugged/vim-vsnip
+	url = https://github.com/hrsh7th/vim-vsnip.git
+[submodule "plugged/friendly-snippets"]
+	path = plugged/friendly-snippets
+	url = https://github.com/rafamadriz/friendly-snippets.git
+[submodule "plugged/lspkind-nvim"]
+	path = plugged/lspkind-nvim
+	url = https://github.com/onsails/lspkind-nvim.git
