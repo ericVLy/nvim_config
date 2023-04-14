@@ -84,7 +84,7 @@ pluginKeys.cmp = function(cmp)
 		return vim.api.nvim_replace_termcodes(str, true, true, true)
 	end
 	return {
-		["<Tab>"] = cmp.mapping({
+		["<C-Tab>"] = cmp.mapping({
 			c = function()
 				if cmp.visible() then
 					cmp.select_next_item({ behavior = cmp.SelectBehavior.Insert })
