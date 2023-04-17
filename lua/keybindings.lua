@@ -19,23 +19,7 @@ map("v", ">", ">gv", opt)
 map("v", "J", ":move '>+1<CR>gv-gv", opt)
 map("v", "K", ":move '<-2<CR>gv-gv", opt)
 -- 切换tab
-map("n", "<leader>1", "1gt<ct>", opt)
-map("n", "<leader>2", "2gt<ct>", opt)
-map("n", "<leader>3", "3gt<ct>", opt)
-map("n", "<leader>4", "4gt<ct>", opt)
-map("n", "<leader>5", "5gt<ct>", opt)
--- hop.nvim
-map("n", "<leader>w", ":HopWord<CR>", opt)
-map("n", "<leader>l", ":HopLine<CR>", opt)
--- vista.vim
-map("n", "<leader>\\", ":Vista!!<CR>", { noremap = true })
--- mundo
-map("n", "<leader>u", ":MundoToggle<CR>", opt)
--- fzf.vim
-map("n", ",f", ":Files<CR>", opt)
-map("n", ",q", ":Lines<CR>", opt)
-map("n", ",w", ":Rg<CR>", opt)
-map("n", ",b", ":Buffers<CR>", opt)
+
 
 local pluginKeys = {}
 
