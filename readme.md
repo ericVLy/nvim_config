@@ -6,9 +6,11 @@
 - python3
 - neovim
 
-## run in command line
+## run such in Powershell
 ``` sh
 git clone https://github.com/ericVLy/nvim_config.git ~\\AppData\\Local\\nvim
 cd ~\\AppData\\Local\\nvim
 python -m pip install -r requirements.txt
+git submodule init
+git submodule update
 ```
