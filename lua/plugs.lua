@@ -23,4 +23,7 @@ Plug 'onsails/lspkind-nvim'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
+-- git
+Plug 'lewis6991/gitsigns.nvim'
+
 vim.call('plug#end')

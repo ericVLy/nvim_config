@@ -46,3 +46,6 @@
 [submodule "plugged/lspkind-nvim"]
 	path = plugged/lspkind-nvim
 	url = https://github.com/onsails/lspkind-nvim.git
+[submodule "plugged/gitsigns.nvim"]
+	path = plugged/gitsigns.nvim
+	url = https://github.com/lewis6991/gitsigns.nvim.git
