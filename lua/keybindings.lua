@@ -2,8 +2,10 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 local map = vim.api.nvim_set_keymap
 local opt = { noremap = true, silent = true }
--- Visual模式 复制到系统剪贴板
-map("v", "<C-y>", '"+y', opt)
+-- Visual mode: copy to system clipboard
+map("v", "<C-S-c>", '"+y', opt)
+-- Normal mode: paste from system clipboard
+map("n", "<C-S-v>", '"+p', opt)
 -- Insert right
 map("i", "<C-f>", "<Right>", opt)
 -- windows 分屏快捷键
