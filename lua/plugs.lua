@@ -25,6 +25,9 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 
 -- git
 Plug 'lewis6991/gitsigns.nvim'
+-- may need wait a part of time when run such two plugs first time
+Plug 'tpope/vim-fugitive'
+Plug 'junegunn/gv.vim'
 
 vim.call('plug#end')
 

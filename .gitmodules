@@ -49,3 +49,9 @@
 [submodule "plugged/gitsigns.nvim"]
 	path = plugged/gitsigns.nvim
 	url = https://github.com/lewis6991/gitsigns.nvim.git
+[submodule "plugged/gv.vim"]
+	path = plugged/gv.vim
+	url = https://github.com/junegunn/gv.vim.git
+[submodule "plugged/vim-fugitive"]
+	path = plugged/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
