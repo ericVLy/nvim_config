@@ -1,6 +1,6 @@
 -- Setup language servers.
 local lspconfig = require('lspconfig')
-lspconfig.pylsp.setup {cmd = {"pylsp", "--tcp", "--port", "2087"}}
+lspconfig.pylsp.setup {}
 -- lspconfig.tsserver.setup {}
 -- lspconfig.rust_analyzer.setup {
 --   -- Server-specific settings. See `:help lspconfig-setup`
