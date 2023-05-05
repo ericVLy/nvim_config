@@ -29,6 +29,10 @@ Plug 'lewis6991/gitsigns.nvim'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 
+
+-- color theme
+vim.cmd[[Plug 'folke/tokyonight.nvim', { 'branch': 'main' }]]
+
 vim.call('plug#end')
 
 -- gitsigns.nvim
