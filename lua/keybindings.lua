@@ -25,7 +25,9 @@ map("v", "K", ":move '<-2<CR>gv-gv", opt)
 
 local pluginKeys = {}
 
-map("n", "<leader>e", ":NvimTreeToggle<CR>", opt)
+-- buffer
+map("n", "<leader>d", ":bdelete<CR>", opt)
+map("n", "<leader>l", ":bnext<CR>", opt)
 
 pluginKeys.nvimTreeList = {
 	-- 打开文件或文件夹
@@ -47,12 +49,12 @@ pluginKeys.nvimTreeList = {
 }
 
 pluginKeys.mapLSP = function(mapbuf)
-	-- rename
-	mapbuf("n", ",r", "<cmd>lua vim.lsp.buf.rename()<CR>", opt)
+	-- -- rename
+	-- mapbuf("n", ",r", "<cmd>lua vim.lsp.buf.rename()<CR>", opt)
 	-- code action
 	mapbuf("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>", opt)
 	-- go xx
-	mapbuf("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opt)
+	mapbuf("n", "<C>i", "<cmd>lua vim.lsp.buf.definition()<CR>", opt)
 	mapbuf("n", "gh", "<cmd>lua vim.lsp.buf.hover()<CR>", opt)
 	mapbuf("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opt)
 	mapbuf("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opt)
