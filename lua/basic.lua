@@ -1,7 +1,7 @@
 -- utf8
 vim.g.encoding = "UTF-8"
 vim.o.fileencoding = 'utf-8'
--- 使用相对行号
+-- set num
 vim.wo.number = true
 -- 高亮所在行
 vim.wo.cursorline = true
