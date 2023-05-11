@@ -30,6 +30,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 
 
+Plug 'puremourning/vimspector'
+
 -- color theme
 vim.cmd[[Plug 'folke/tokyonight.nvim', { 'branch': 'main' }]]
 
