@@ -58,3 +58,6 @@
 [submodule "plugged/tokyonight.nvim"]
 	path = plugged/tokyonight.nvim
 	url = https://github.com/folke/tokyonight.nvim.git
+[submodule "plugged/vimspector"]
+	path = plugged/vimspector
+	url = https://github.com/puremourning/vimspector.git

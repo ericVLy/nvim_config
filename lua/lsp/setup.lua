@@ -1,6 +1,26 @@
 -- Setup language servers.
 local lspconfig = require('lspconfig')
-lspconfig.pylsp.setup {}
+lspconfig.pylsp.setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+    settings = {
+        formatCommand = {"black"},
+        pylsp = {
+          plugins = {
+            flake8 = { enabled = false },
+            -- pylint = { enabled = true,
+            --            args = { '--rcfile','pylint.conf' }
+            -- },
+            black = { enabled = true },
+            isort = { enabled = true },
+            pyls_mypy = {
+              enabled = true,
+              --live_mode = true,
+                    },
+                  },
+                }
+              }
+}
 -- lspconfig.tsserver.setup {}
 -- lspconfig.rust_analyzer.setup {
 --   -- Server-specific settings. See `:help lspconfig-setup`
