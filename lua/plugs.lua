@@ -1,5 +1,6 @@
 local Plug = vim.fn['plug#']
-vim.call('plug#begin', '~\\AppData\\Local\\nvim\\plugged')
+-- vim.call('plug#begin', '~\\AppData\\Local\\nvim\\plugged')
+vim.call('plug#begin', '~/.config/nvim/plugged')
 -- below are some vim plugins for demonstration purpose.
 -- add the plugin you want to use here.
 Plug 'vim-airline/vim-airline'
