@@ -61,3 +61,6 @@
 [submodule "plugged/vimspector"]
 	path = plugged/vimspector
 	url = https://github.com/puremourning/vimspector.git
+[submodule "plugged/rust.vim"]
+	path = plugged/rust.vim
+	url = https://github.com/rust-lang/rust.vim.git
