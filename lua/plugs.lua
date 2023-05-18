@@ -24,6 +24,9 @@ Plug 'onsails/lspkind-nvim'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
+-- rust
+Plug 'rust-lang/rust.vim'
+
 -- git
 Plug 'lewis6991/gitsigns.nvim'
 -- may need wait a part of time when run such two plugs first time
