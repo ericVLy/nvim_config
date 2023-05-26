@@ -64,3 +64,12 @@
 [submodule "plugged/rust.vim"]
 	path = plugged/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
+[submodule "plugged/telescope.nvim"]
+	path = plugged/telescope.nvim
+	url = https://github.com/nvim-telescope/telescope.nvim.git
+[submodule "plugged/plenary.nvim"]
+	path = plugged/plenary.nvim
+	url = https://github.com/nvim-lua/plenary.nvim.git
+[submodule "plugged/nvim-treesitter"]
+	path = plugged/nvim-treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter.git

@@ -1,6 +1,6 @@
 local Plug = vim.fn['plug#']
--- vim.call('plug#begin', '~\\AppData\\Local\\nvim\\plugged')
-vim.call('plug#begin', '~/.config/nvim/plugged')
+vim.call('plug#begin', '~\\AppData\\Local\\nvim\\plugged')
+-- vim.call('plug#begin', '~/.config/nvim/plugged')
 -- below are some vim plugins for demonstration purpose.
 -- add the plugin you want to use here.
 Plug 'vim-airline/vim-airline'
@@ -35,6 +35,15 @@ Plug 'junegunn/gv.vim'
 
 
 Plug 'puremourning/vimspector'
+
+-- heigh light
+Plug 'nvim-treesitter/nvim-treesitter'
+
+-- telescope
+vim.cmd[[
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.x' }
+]]
 
 -- color theme
 vim.cmd[[Plug 'folke/tokyonight.nvim', { 'branch': 'main' }]]
