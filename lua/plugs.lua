@@ -1,5 +1,6 @@
 local Plug = vim.fn['plug#']
-vim.call('plug#begin', '~\\AppData\\Local\\nvim\\plugged')
+-- vim.call('plug#begin', '~\\AppData\\Local\\nvim\\plugged')
+vim.call('plug#begin', '~/.config/nvim/plugged')
 -- below are some vim plugins for demonstration purpose.
 -- add the plugin you want to use here.
 Plug 'vim-airline/vim-airline'
@@ -22,6 +23,9 @@ Plug 'onsails/lspkind-nvim'
 
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+
+-- rust
+Plug 'rust-lang/rust.vim'
 
 -- git
 Plug 'lewis6991/gitsigns.nvim'
