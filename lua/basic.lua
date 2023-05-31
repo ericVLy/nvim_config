@@ -13,6 +13,15 @@ vim.bo.autoindent = true
 -- auto read write
 vim.g.autoread = true
 vim.g.autowriteall = true
+
+-- Complete parentheses
+vim.cmd[[
+inoremap { {}<Esc>i
+inoremap ( ()<Esc>i
+inoremap [ []<Esc>i
+inoremap " ""<Esc>i
+inoremap ' ''<Esc>i
+]]
 -- nerdtree config
 vim.cmd[[
 nnoremap <leader>n :NERDTreeFocus<CR>
