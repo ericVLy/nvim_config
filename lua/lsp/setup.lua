@@ -8,7 +8,9 @@ lspconfig.pylsp.setup {
         pylsp = {
           plugins = {
             flake8 = { enabled = false },
-            pycodestyle = {enabled = true},
+            pycodestyle = { enabled = true,
+                            maxLineLength = 160,
+                            count = false},
             -- pylint = { enabled = true,
             --            args = { '--rcfile','~\\AppData\\Local\\nvim\\lua\\lsp\\python\\pylint.conf' }
             -- },
