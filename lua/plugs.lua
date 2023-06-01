@@ -1,6 +1,15 @@
+-- return true if os is windows
+local function is_windows()
+  return "\\" == package.config:sub(1,1)
+end
+
 local Plug = vim.fn['plug#']
-vim.call('plug#begin', '~\\AppData\\Local\\nvim\\plugged')
--- vim.call('plug#begin', '~/.config/nvim/plugged')
+if (is_windows())
+then
+  vim.call('plug#begin', '~\\AppData\\Local\\nvim\\plugged')
+else
+  vim.call('plug#begin', '~/.config/nvim/plugged')
+end
 -- below are some vim plugins for demonstration purpose.
 -- add the plugin you want to use here.
 Plug 'vim-airline/vim-airline'
