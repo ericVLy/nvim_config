@@ -1,4 +1,16 @@
 -- Setup language servers.
+
+local function is_windows()
+  return "\\" == package.config:sub(1,1)
+end
+if (is_windows())
+then
+        pylint_conf = '~\\AppData\\Local\\nvim\\lua\\lsp\\python\\pylint.conf'
+else
+        pylint_conf = '~/.config/nvim/lua/lsp/python/pylint.conf'
+end
+
+
 local lspconfig = require('lspconfig')
 
 lspconfig.lua_ls.setup {
@@ -32,10 +44,11 @@ lspconfig.pylsp.setup {
             flake8 = { enabled = false },
             pycodestyle = { enabled = true,
                             maxLineLength = 160,
-                            count = false},
-            -- pylint = { enabled = true,
-            --            args = { '--rcfile','~\\AppData\\Local\\nvim\\lua\\lsp\\python\\pylint.conf' }
-            -- },
+                            count = false,
+                            ignore = {"E722"}},
+            pylint = { enabled = true,
+                       args = { '--rcfile', pylint_conf }
+             },
             black = { enabled = true },
             isort = { enabled = true },
             pyls_mypy = {
