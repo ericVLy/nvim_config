@@ -8,6 +8,8 @@
 - *for telescope:*
     - https://github.com/BurntSushi/ripgrep
     - https://github.com/sharkdp/fd
+- lua language server
+    - https://github.com/LuaLS/lua-language-server.git
 
 ## Installing
 - run such command in shell
