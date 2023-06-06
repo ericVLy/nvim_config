@@ -3,6 +3,7 @@ local version = vim.version
 
 require('basic')
 require("plugs")
+require("nvim_treesitter")
 require("lsp/setup")
 
 -- theme
