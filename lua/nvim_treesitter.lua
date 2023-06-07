@@ -23,6 +23,6 @@ require'nvim-treesitter.configs'.setup {
   }
 }
 -- enable Folding
-vim.wo.foldmethod = 'expr'
+vim.wo.foldmethod = 'indent'
 vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
 vim.wo.foldlevel = 99
