@@ -1,7 +1,7 @@
 require'nvim-treesitter.configs'.setup {
   -- install language parser
   -- :TSInstallInfo show installed info
-  ensure_installed = {"vim", "lua", "python"},
+  ensure_installed = {"vim", "lua", "python", "markdown"},
   -- enable highlight
   highlight = {
     enable = true,
