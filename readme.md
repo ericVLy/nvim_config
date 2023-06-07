@@ -18,7 +18,7 @@
         git clone https://github.com/ericVLy/nvim_config.git ~\\AppData\\Local\\nvim  # Windows
         cd ~/.config/nvim  # Linux
         cd ~\\AppData\\Local\\nvim  # Windows
-        python -m pip install -r requirements.txt
+        python -m pip install -r requirements.txt  # May conflict, if the system package manager contain the python packages.
         git submodule init
         git submodule update
         ```
