@@ -5,6 +5,7 @@ require('basic')
 require("plugs")
 require("nvim_treesitter")
 require("lsp/setup")
+require('keybindings')
 
 -- theme
 vim.cmd[[colorscheme tokyonight]]

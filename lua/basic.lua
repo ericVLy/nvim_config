@@ -1,3 +1,12 @@
+local function is_windows()
+  return "\\" == package.config:sub(1,1)
+end
+
+      if (is_windows())
+      then
+        vim.o.shell = "cmd"
+      end
+
 -- utf8
 vim.g.encoding = "UTF-8"
 vim.o.fileencoding = 'utf-8'

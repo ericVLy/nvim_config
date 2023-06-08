@@ -73,3 +73,6 @@
 [submodule "plugged/nvim-treesitter"]
 	path = plugged/nvim-treesitter
 	url = https://github.com/nvim-treesitter/nvim-treesitter.git
+[submodule "plugged/toggleterm.nvim"]
+	path = plugged/toggleterm.nvim
+	url = https://github.com/akinsho/toggleterm.nvim.git
