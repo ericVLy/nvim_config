@@ -76,3 +76,6 @@
 [submodule "plugged/toggleterm.nvim"]
 	path = plugged/toggleterm.nvim
 	url = https://github.com/akinsho/toggleterm.nvim.git
+[submodule "plugged/vimspectorpy"]
+	path = plugged/vimspectorpy
+	url = https://github.com/sagi-z/vimspectorpy.git

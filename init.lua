@@ -18,5 +18,8 @@ vim.cmd[[
     let g:airline#extensions#tabline#formatter = 'unique_tail'
 ]]
 
-vim.cmd[[let g:vimspector_enable_mappings='HUMAN']]
+vim.cmd[[
+let g:vimspector_enable_mappings='HUMAN'
+let g:vimspector_install_gadgets = ["debugpy", "vscode-python"]
+]]
 

@@ -44,7 +44,7 @@ Plug 'junegunn/gv.vim'
 
 
 Plug 'puremourning/vimspector'
-
+Plug 'sagi-z/vimspectorpy'
 -- heigh light
 Plug 'nvim-treesitter/nvim-treesitter'
 
