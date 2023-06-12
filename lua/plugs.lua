@@ -42,9 +42,12 @@ Plug 'lewis6991/gitsigns.nvim'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/gv.vim'
 
-
+-- debug tool
 Plug 'puremourning/vimspector'
+if not (is_windows())
+then
 Plug 'sagi-z/vimspectorpy'
+end
 -- heigh light
 Plug 'nvim-treesitter/nvim-treesitter'
 
