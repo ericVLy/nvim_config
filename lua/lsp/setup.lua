@@ -46,7 +46,7 @@ lspconfig.pylsp.setup {
                             maxLineLength = 120,
                             count = false,
                             ignore = {"E722"}},
-            pylint = { enabled = true,
+            pylint = { enabled = false,
                        args = { '--rcfile', pylint_conf }
              },
             black = { enabled = true },
