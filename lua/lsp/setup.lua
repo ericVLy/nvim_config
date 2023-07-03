@@ -4,18 +4,20 @@ local function is_windows()
   return "\\" == package.config:sub(1,1)
 end
 
+local function file_exists(name)
+   local f=io.open(name,"r")
+   if f~=nil then io.close(f) return true else return false end
+end
+
+
 pylint_conf = "pylint.conf"
-if not (io.open(pylint_conf, "r"))
+if not (file_exists(pylint_conf))
 then
         if (is_windows())
         then
                 pylint_conf = '~\\AppData\\Local\\nvim\\lua\\lsp\\python\\pylint.conf'
         else
                 pylint_conf = '~/.config/nvim/lua/lsp/python/pylint.conf'
-        end
-        if not (io.open(pylint_conf, "r"))
-        then
-                io.popen("pylint --persistent=n --generate-rcfile > " .. pylint_conf)
         end
 end
 
