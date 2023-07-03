@@ -1,13 +1,13 @@
 -- Setup language servers.
 
-local function is_windows()
-  return "\\" == package.config:sub(1,1)
-end
-if (is_windows())
+-- local function is_windows()
+--   return "\\" == package.config:sub(1,1)
+-- end
+
+pylint_conf = "pylint.conf"
+if not (io.open(pylint_conf, "r"))
 then
-        pylint_conf = '~\\AppData\\Local\\nvim\\lua\\lsp\\python\\pylint.conf'
-else
-        pylint_conf = '~/.config/nvim/lua/lsp/python/pylint.conf'
+        io.popen("pylint --persistent=n --generate-rcfile > pylint.conf")
 end
 
 
@@ -46,7 +46,7 @@ lspconfig.pylsp.setup {
                             maxLineLength = 120,
                             count = false,
                             ignore = {"E722"}},
-            pylint = { enabled = false,
+            pylint = { enabled = true,
                        args = { '--rcfile', pylint_conf }
              },
             black = { enabled = true },
