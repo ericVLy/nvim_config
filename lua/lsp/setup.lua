@@ -1,13 +1,22 @@
 -- Setup language servers.
 
--- local function is_windows()
---   return "\\" == package.config:sub(1,1)
--- end
+local function is_windows()
+  return "\\" == package.config:sub(1,1)
+end
 
 pylint_conf = "pylint.conf"
 if not (io.open(pylint_conf, "r"))
 then
-        io.popen("pylint --persistent=n --generate-rcfile > pylint.conf")
+        if (is_windows())
+        then
+                pylint_conf = '~\\AppData\\Local\\nvim\\lua\\lsp\\python\\pylint.conf'
+        else
+                pylint_conf = '~/.config/nvim/lua/lsp/python/pylint.conf'
+        end
+        if not (io.open(pylint_conf, "r"))
+        then
+                io.popen("pylint --persistent=n --generate-rcfile > " .. pylint_conf)
+        end
 end
 
 
