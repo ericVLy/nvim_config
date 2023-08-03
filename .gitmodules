@@ -79,3 +79,6 @@
 [submodule "plugged/vimspectorpy"]
 	path = plugged/vimspectorpy
 	url = https://github.com/sagi-z/vimspectorpy.git
+[submodule "plugged/nvim-scrollview"]
+	path = plugged/nvim-scrollview
+	url = https://github.com/dstein64/nvim-scrollview.git
