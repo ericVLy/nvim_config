@@ -59,7 +59,7 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.x' }
 
 
 
-Plug 'dstein64/nvim-scrollview'
+-- Plug 'dstein64/nvim-scrollview'
 
 -- Terminal
 vim.cmd[[
