@@ -80,7 +80,7 @@ pluginKeys.cmp = function(cmp)
 		return vim.api.nvim_replace_termcodes(str, true, true, true)
 	end
 	return {
-		["<C-Tab>"] = cmp.mapping({
+		["<Tab>"] = cmp.mapping({
 			c = function()
 				if cmp.visible() then
 					cmp.select_next_item({ behavior = cmp.SelectBehavior.Insert })
@@ -91,8 +91,6 @@ pluginKeys.cmp = function(cmp)
 			i = function(fallback)
 				if cmp.visible() then
 					cmp.select_next_item({ behavior = cmp.SelectBehavior.Insert })
-				elseif vim.fn["UltiSnips#CanJumpForwards"]() == 1 then
-					vim.api.nvim_feedkeys(t("<Plug>(ultisnips_jump_forward)"), "m", true)
 				else
 					fallback()
 				end
@@ -116,8 +114,6 @@ pluginKeys.cmp = function(cmp)
 			i = function(fallback)
 				if cmp.visible() then
 					cmp.select_prev_item({ behavior = cmp.SelectBehavior.Insert })
-				elseif vim.fn["UltiSnips#CanJumpBackwards"]() == 1 then
-					return vim.api.nvim_feedkeys(t("<Plug>(ultisnips_jump_backward)"), "m", true)
 				else
 					fallback()
 				end
@@ -134,16 +130,16 @@ pluginKeys.cmp = function(cmp)
 		["<Up>"] = cmp.mapping(cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select }), { "i", "c" }),
 		["<C-e>"] = cmp.mapping({ i = cmp.mapping.close(), c = cmp.mapping.close() }),
 		["<C-Space>"] = cmp.mapping(cmp.mapping.complete(), { "i", "c" }),
-		["<CR>"] = cmp.mapping({
-			i = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true }),
-			c = function(fallback)
-				if cmp.visible() then
-					cmp.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true })
-				else
-					fallback()
-				end
-			end,
-		}),
+                ["<CR>"] = cmp.mapping({
+                        i = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true }),
+                     -- c = function(fallback)
+                     --         if cmp.visible() then
+                     --                 cmp.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true })
+                     --         else
+                     --                 fallback()
+                     --         end
+                     -- end,
+                }),
 	}
 end
 
