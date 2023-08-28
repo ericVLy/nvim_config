@@ -23,6 +23,9 @@ vim.bo.autoindent = true
 vim.g.autoread = true
 vim.g.autowriteall = true
 
+vim.o.foldmethod = "indent"
+vim.o.foldlevel = 1
+
 -- Complete parentheses
 vim.cmd[[
 inoremap { {}<Esc>i
