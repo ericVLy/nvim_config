@@ -1,4 +1,3 @@
--- Setup language servers.
 
 local function is_windows()
   return "\\" == package.config:sub(1,1)
@@ -21,7 +20,18 @@ then
         end
 end
 
+local custom_attach = function(client, bufnr)
+  -- Mappings.
+  local map = function(mode, l, r, opts)
+    opts = opts or {}
+    opts.silent = true
+    opts.buffer = bufnr
+    keymap.set(mode, l, r, opts)
+  end
+end
 
+
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
 local lspconfig = require('lspconfig')
 
 lspconfig.lua_ls.setup {
@@ -47,6 +57,12 @@ lspconfig.lua_ls.setup {
   },
 }
 
+
+-- lspconfig.pyright.setup{
+--   on_attach = custom_attach,
+--   capabilities = capabilities
+-- }
+
 lspconfig.pylsp.setup {
     settings = {
         formatCommand = {"black"},
@@ -58,13 +74,15 @@ lspconfig.pylsp.setup {
                             count = false,
                             ignore = {"E722"}},
             pylint = { enabled = true,
-                       args = { '--rcfile', pylint_conf }
-             },
+                      args = { '--rcfile', pylint_conf }
+            },
             black = { enabled = true },
             isort = { enabled = true },
+            jedi_completion = { fuzzy = true },
             pyls_mypy = {
               enabled = true,
-              --live_mode = true,
+              report_progress = true,
+              live_mode = false,
                     },
                   },
                 }
