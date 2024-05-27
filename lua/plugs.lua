@@ -58,6 +58,12 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.x' }
 ]]
 
 
+-- django
+
+vim.cmd[[
+Plug 'yaegassy/coc-htmldjango', {'do': 'yarn install --frozen-lockfile'}
+]]
+
 
 -- Plug 'dstein64/nvim-scrollview'
 

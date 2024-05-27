@@ -82,3 +82,6 @@
 [submodule "plugged/nvim-scrollview"]
 	path = plugged/nvim-scrollview
 	url = https://github.com/dstein64/nvim-scrollview.git
+[submodule "plugged/coc-htmldjango"]
+	path = plugged/coc-htmldjango
+	url = https://github.com/yaegassy/coc-htmldjango.git
